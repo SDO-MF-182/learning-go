@@ -7,12 +7,12 @@ This package is one of the standard library packages you got when you installed 
 import (
 	"fmt"
 
-	"rsc.io/quote"
-) // add the module to your repo with "go mod tidy"
+	"github.com/SDO-MF-182/learning-go/first-module/greetings"
+)
 
 // Implement a main function to print a message to the console. A main function executes by default when you run the main package.
 func main() {
 	fmt.Println("Hello, World!")
-	// import the rsc.io/quote package and add a call to its Go function.
-	fmt.Println(quote.Hello())
+	message := greetings.Hello("Superior-God-mr.MC-Hammergeil")
+	fmt.Println(message)
 }
